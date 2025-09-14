@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vídeo - Emagrecimento</title>
+  <style>
+    :root{
+      --red:#d9302c;
+      --card:#ffffff;
+      --muted:#666666;
+      --shadow: 0 6px 18px rgba(0,0,0,0.08);
+      --max-width:900px;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+
+    body{
+      margin:0;
+      background:#f7f7f8;
+      display:flex;
+      justify-content:center;
+      padding:28px 16px;
+      color:#111;
+    }
+
+    .wrap{width:100%; max-width:var(--max-width);}
+
+    .top-banner{
+      background:var(--red);
+      color:#fff;
+      padding:18px 20px;
+      border-radius:10px;
+      box-shadow:var(--shadow);
+      text-align:center;
+      font-size:18px;
+      font-weight:700;
+    }
+
+    .card{
+      background:var(--card);
+      margin-top:18px;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .headline{
+      font-size:22px;
+      font-weight:700;
+      margin:10px 0;
+    }
+    .headline .red{color:var(--red);}
+    .sub{
+      font-size:14px;
+      color:var(--muted);
+      margin-bottom:14px;
+    }
+
+    #video-area{
+      background:#000;
+      border-radius:10px;
+      overflow:hidden;
+      margin-bottom:10px;
+    }
+
+    .viewers{
+      margin-top:12px;
+      font-weight:700;
+      color:#222;
+      text-align:center;
+    }
+    .viewers .count{
+      font-size:18px;
+    }
+    .viewers .note{
+      font-size:13px;
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    .comments{
+      margin-top:18px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      text-align:left;
+    }
+    .comment{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:12px;
+      border-radius:8px;
+      background:#fff;
+      border:1px solid rgba(0,0,0,0.05);
+    }
+    .comment .avatar{
+      width:46px;
+      height:46px;
+      border-radius:50%;
+      background:#ddd;
+      flex-shrink:0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#555;
+    }
+    .comment-body{flex:1;}
+    .comment-body .meta{
+      display:flex;
+      gap:8px;
+      align-items:center;
+      margin-bottom:6px;
+    }
+    .comment-body .name{font-weight:700; font-size:14px;}
+    .comment-body .time{font-size:12px; color:var(--muted);}
+    .comment-body .text{font-size:14px; margin-top:4px; line-height:1.35;}
+    .actions{font-size:12px; color:#385898; margin-top:6px; display:flex; gap:16px;}
+    .likes{font-size:12px; color:#666; margin-top:4px;}
+
+    .reply{margin-left:58px; margin-top:8px;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <!-- Topo -->
+    <div class="top-banner" id="current-date"></div>
+
+    <div class="card">
+      <div class="headline">
+        <span class="red">Doutora</span> brasileira está ajudando mulheres angolanas a perder alguns <span class="red">quilos</span>.
+      </div>
+      <div class="sub">Assista ao vídeo até ao final para conhecer o método e resultados reais.</div>
+
+      <!-- Vídeo -->
+      <div id="video-area">
+        <vturb-smartplayer id="vid-68c60883d64e18967f752ca4" style="display:block; margin:0 auto; width:100%;"></vturb-smartplayer>
+        <script type="text/javascript">
+          var s=document.createElement("script");
+          s.src="https://scripts.converteai.net/9c6a82e8-8083-4c5a-86f4-3d2a51c4fe6b/players/68c60883d64e18967f752ca4/v4/player.js";
+          s.async=!0;
+          document.head.appendChild(s);
+        </script>
+      </div>
+
+      <!-- Visualizadores -->
+      <div class="viewers">
+        <div class="count" id="viewer-count">1.200</div>
+        <div class="note">pessoas a assistir agora</div>
+      </div>
+
+      <!-- Comentários -->
+      <div class="comments">
+        <div class="comment">
+          <div class="avatar">M</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Maria Silva</div><div class="time">há 1 hora</div></div>
+            <div class="text">Adquiri a receita e em menos de 1 mês perdi 10 quilos. Foram os meus 4.250 kz mais bem gastos!</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+            <div class="likes">32 gostos</div>
+            <div class="reply">
+              <div class="comment">
+                <div class="avatar">A</div>
+                <div class="comment-body">
+                  <div class="meta"><div class="name">Ana Gomes</div><div class="time">há 50 min</div></div>
+                  <div class="text">Concordo, Maria! Também comprei e já perdi 7 quilos.</div>
+                  <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar">L</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Lúcia Tavares</div><div class="time">há 2 horas</div></div>
+            <div class="text">Em apenas 3 semanas perdi 5 quilos. Nunca pensei que fosse tão rápido!</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+            <div class="likes">15 gostos</div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar">C</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Carla Mendes</div><div class="time">há 3 horas</div></div>
+            <div class="text">Vale cada centavo! Já perdi 12 quilos e recuperei a minha autoestima.</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+            <div class="likes">21 gostos</div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar">S</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Sandra Costa</div><div class="time">há 4 horas</div></div>
+            <div class="text">Adorei! Foram os meus 4.250 kz mais bem investidos. Recomendo!</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+            <div class="likes">10 gostos</div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar">P</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Patrícia Fernandes</div><div class="time">há 5 horas</div></div>
+            <div class="text">Já perdi 8 quilos. Sinto-me muito mais confiante!</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+          </div>
+        </div>
+
+        <div class="comment">
+          <div class="avatar">R</div>
+          <div class="comment-body">
+            <div class="meta"><div class="name">Rita Lopes</div><div class="time">há 6 horas</div></div>
+            <div class="text">Melhor decisão que tomei este ano. Funciona mesmo!</div>
+            <div class="actions"><div>👍 Gosto</div><div>Responder</div></div>
+            <div class="likes">5 gostos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Data atual sempre visível
+    function updateDate(){
+      const el = document.getElementById('current-date');
+      const now = new Date();
+      const day = now.getDate();
+      const month = now.getMonth() + 1;
+      const year = now.getFullYear();
+      el.textContent = Esta página está no ar até o dia ${day} de ${month} de ${year};
+    }
+    updateDate();
+    setInterval(updateDate, 60000);
+
+    // Viewer count muda a cada 2s
+    (function(){
+      const el = document.getElementById('viewer-count');
+      let values = [1200,1300,1400,1320,1327,1800,1250,1385,1176,1422];
+      let idx = 0;
+      function formatNumber(n){return new Intl.NumberFormat('pt-PT').format(n);}
+      function tick(){
+        el.textContent = formatNumber(values[idx % values.length]);
+        idx++;
+      }
+      tick();
+      setInterval(tick, 2000);
+    })();
+  </script>
+</body>
+</html>
