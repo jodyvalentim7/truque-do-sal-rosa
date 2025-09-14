@@ -1,0 +1,1 @@
+# truque-do-sal-rosa
